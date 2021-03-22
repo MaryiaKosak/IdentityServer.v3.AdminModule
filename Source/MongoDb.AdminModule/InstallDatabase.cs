@@ -22,14 +22,14 @@ namespace IdentityServer3.Admin.MongoDb.Powershell
     public class InstallDatabase : MongoCmdlet
     {
         public InstallDatabase()
-            : base(true)
+            : base(false)
         {
 
         }
 
         protected override void ProcessRecord()
         {
-            AdminService.CreateDatabase().Wait();
+            //AdminService.CreateDatabase().Wait();
         }
     }
 }

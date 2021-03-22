@@ -94,11 +94,11 @@ namespace IdentityServer3.Admin.MongoDb.Powershell
 
         void CanCreateDatabase(StoreSettings settings)
         {
-            var client = new MongoClient(settings.ConnectionString);
-
-            if (client.DatabaseExistsAsync(settings.Database).Result || _createDb)
-                return;
-            throw new InvalidOperationException("Database does not exist");
+            // var client = new MongoClient(settings.ConnectionString);
+            //
+            // if (client.DatabaseExistsAsync(settings.Database).Result || _createDb)
+            //     return;
+            // throw new InvalidOperationException("Database does not exist");
         }
     }
 }

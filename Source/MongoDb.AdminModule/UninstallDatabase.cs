@@ -22,14 +22,14 @@ namespace IdentityServer3.Admin.MongoDb.Powershell
     public class UninstallDatabase : MongoCmdlet
     {
         public UninstallDatabase()
-            : base(true)
+            : base(false)
         {
 
         }
 
         protected override void ProcessRecord()
         {
-            AdminService.RemoveDatabase().Wait();
+            //AdminService.RemoveDatabase().Wait();
         }
     }
 }
